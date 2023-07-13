@@ -1,0 +1,88 @@
+.bar {
+    position: relative;}
+.centered-text{
+color:white;
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .title{
+    height: 200px;
+    width: 100%;
+    margin-top: 120px;
+}
+.centered-text{
+  
+    margin-top: 50px;}
+.centered-text h2{
+    font-size: 50px;
+    font-family: Bad Script;
+    font-weight: bold;
+  }
+.package-item{
+  border: 1px solid #cac9c9;
+}
+
+.package-item a {
+display: block;
+}
+
+
+/*  footer 
+-------------------------------------------------- */
+#button-addon1 {
+  color: #ffc371;
+}
+
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+.bg{
+  background-image: url(../images/footer005.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  color:rgb(255, 251, 251);
+  opacity: 0.9;
+}
+text{
+  margin-bottom: 150px;
+}
+.copy{
+  margin-top: 150px;
+  color:rgb(255, 251, 251);
+}
+.flex{display: flex;}
+.right,.left{flex:1}
+
+.copyrights{
+  margin-left: 20%;
+  text-align: center;
+  font-size: 15px;
+}
+.left{
+  margin-top: 5%;
+  margin-left: 15%;}
+.right{
+  margin-top: 5%;
+  margin-right: 15%;}

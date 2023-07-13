@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <!-- Font-awesome Icon -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="../logo-1.png">
+    <title>Contact</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav>
+        <img src="../logo.png" class="logo">
+        <ul>
+            <li><a href="../home_page_v.2.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="country.html">Destination</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="payment.html"><i class="bi bi-cart3"></i></a></li>
+            <div class='Translate' id="google_translate_element"></div><!-- Google Translate -->
+            <select class="currency" id="from-currency-select"></select>
+        </ul>
+    </nav>
+     <!-- 貨幣轉換 -->
+     <script src="../JS/currency_codes.js"></script>
+    <script src="../JS/currency_exchange.js"></script>
+    <!-- -----------------Google Translate--------------- -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../JS/google_translate.js"></script>
+<!------------------------- chatbot ----------------------------->
+     <!-- css file link -->
+     <link rel="stylesheet" href="../chat/chat.css">
+
+     <!-- font awesome icon cdn-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     <div class="parent">
+             <button id="init" style="position: fixed" >START CHAT</button> 
+     </div>
+     <div id="test" style="position: fixed;top: 11rem;right: 3rem;display: none;">
+         <div class="child" id="chatbot">
+             <div class="header">
+                 <div class="h-child">
+                     <img src="../chat/chatbot (1).png" alt="avatar" id="avatar">
+                     <div>
+                         <span class="name">Chatbot</span>
+                         <br>
+                         <span style="color:lawngreen">online</span>
+                     </div>
+                 </div>
+                 <div>
+                     <button class="Btn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                 </div>
+             </div>
+             <div id="chat-box">
+             </div>
+         </div>
+     </div>
+ 
+     <!-- js file  -->
+     <script src="../chat/chat.js"></script>
+
+     <!-- Slides Section Start-->
+
+    <!-- Book Now Section Start -->
+    <section id="book"> 
+        <div class="container">
+            <div class="book-content-par">
+                <div class="book-counter">
+                    <h3 class="font">Contact Us</h3>
+                    “I am not born for one corner; the whole world is my native land.”
+                    <div class="font-right">― Lucius Annaeus Seneca</div>
+                </div>
+                <div class="book-form" ><!-- Booking Form -->
+                  <form id="form">
+                    <div class="field">
+                      <label for="from_name">Name</label>
+                      <input type="text" name="from_name" id="from_name">
+                    </div>   
+                    <div class="field">
+                      <label for="email">Email</label>
+                      <input type="text" name="email" id="email">
+                    </div>  
+                      <label for="country">Country</label>
+                      <select name="country" id="country">
+                        <option value="australia">Athens</option>
+                        <option value="canada">Corfu</option>
+                        <option value="india">Santorini</option>
+                      </select>
+                      <div class="field">
+                        <label for="message">Message</label>
+                        <textarea type="text" name="message" id="message" class="message" placeholder=" Keep in touch " style="height: 200px; color:black"></textarea>
+                      </div>
+                        <!-- <button class="submit" onclick="alert('已發送')">Send</button> -->
+                      <input type="submit" id="button" class="submit" value="Send Email" >
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white" style="background-color: #caced1;">
+      <!-- Section: Images -->
+      <section class="p-4">
+        <div class="row">
+          <div class="col-lg-2 col-md-10 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="/images/athen01.jpg" class="w-100 h-100">
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="/images/athen02.jpg" class="w-100 h-100">
+            <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                    <img src="/images/athen03.jpg" class="w-100 h-100">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                    <img src="/images/athen04.jpg" class="w-100 h-100">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                    <img src="/images/corfu002.jpg" class="w-100 h-100">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                    <img src="/images/athen06.jpg" class="w-100 h-100">
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        <div class="container p-1 "></div>
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+          </div>
+      
+ <!-- footer -->
+ <footer class="bg-white">
+  <div class="flex">
+    <div class="left">
+        <img src="/logo.png" alt="" width="50" class="mb-3">
+        <p class="gray"> Discover the most beautiful islands, ancient city ruins, cultural festivals and gourmet food, book unique trips, and offer exclusive offers. Subscribe and explore the charm of Greece!</p>
+        <ul class="list-inline" width="50">
+          <li class="list-inline-item"><a href="https://twitter.com/" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook "></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram "></i></a></li>
+          <li class="list-inline-item"><a href="https://www.pinterest.com/" target="_blank" title=""><i class="fa fa-pinterest "></i></a></li>
+          <li class="list-inline-item"><a href="https://vimeo.com/" target="_blank" title=""><i class="fa fa-vimeo "></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="right">
+        <h6 class="color">Subscription</h6>
+        <p class="gray">Join us to receive more news about Greece for a wonderful Journeys!</p>
+        <div class="p-1 rounded border">
+        <div class="input-group">
+          <div class="book-form">
+          <form id="form"> 
+        <div class="field ">
+          <input type="text" name="email" id="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+        </div>
+          <div class="input-group-append">
+            <input type="submit" id="button" class="" value="Send Email" ><i class="fa fa-paper-plane"></i>
+             <!-- <button class="submit" onclick="alert('已發送')">Send</button> -->
+          </form>
+          </div>                         
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Email.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript"> emailjs.init('-jwKv0z9xZ8AhbRR9')</script>
+<script src="JS/email.js"></script>
+
+  <!-- Copyrights -->
+  <div class="bg-light py-4 copy">
+    <div class="container text">
+      <p class="copyrights"> Copyright 2023 © Grecian Journeys - All Rights Reserved</p>
+      <p class=" text-center font-size copyrights ">Designed by Angel & Chloe</p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript"> emailjs.init('-jwKv0z9xZ8AhbRR9')</script>
+<script src="../JS/email.js"></script>
+    <!-- Book Now Section End -->
+    <!-- 倒數計時 -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../JS/timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.delete{
+    height: 800px;
+}
+/*  footer 
+-------------------------------------------------- */
+#button-addon1 {
+    color: #ffc371;
+  }
+  
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  .py-6{
+    font-size: 20px;
+  }
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+  .bg{
+    background-image: url(../images/footer005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    color:rgb(255, 251, 251);
+    opacity: 0.9;
+  }
+  text{
+    margin-bottom: 150px;
+  }
+  .copy{
+    margin-top: 250px;
+    color:rgb(255, 251, 251);
+  }
+  .flex{display: flex;}
+  .right,.left{flex:1}
+  
+  .copyrights{
+    margin-left: 20%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .left{
+    margin-top: 5%;
+    margin-left: 15%;}
+  .right{
+    margin-top: 5%;
+    margin-right: 15%;}
+
+    .carousel.slide{
+      margin-right: 20px;
+      width: 75%;
+    }
+    .carousel-inner{
+    border-radius: 20px;
+    }

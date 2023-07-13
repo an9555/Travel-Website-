@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/model.css">
+    <link rel="stylesheet" href="/payment/payment.css">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AcZ6QxQGGjnx7kxXMsnXCG42scZt-2t98AT2kXAVpyx94A8RBCEPswExkO4o9iz48dvY2aUBgyoYACY7"></script>
+<script>
+paypal.Buttons().render("#paypal");</script>
+<link rel="icon" href="../logo-1.png">
+    <title>Payment</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav>
+      <img src="../logo.png" class="logo">
+        <ul>
+            <li><a href="../home_page_v.2.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="country.html">Destination</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="payment.html"><i class="bi bi-cart3"></i></a></li>
+            <div class='Translate' id="google_translate_element"></div><!-- Google Translate -->
+            <select class="currency" id="from-currency-select"></select>
+        </ul>
+    </nav>
+     <!-- 貨幣轉換 -->
+     <script src="../JS/currency_codes.js"></script>
+    <script src="../JS/currency_exchange.js"></script>
+    <!-- -----------------Google Translate--------------- -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../JS/google_translate.js"></script>
+    <!-- payment -->
+    <div class="payment">
+        <h1 class="chart">Shopping Cart</h1>
+      </div>
+
+
+      <div class="shopping-cart">
+
+        <div class="column-labels">
+          <label class="product-image ">Image</label>
+          <label class="product-details all">Product</label>
+          <label class="product-price">Price</label>
+          <label class="product-quantity all">Quantity</label>
+          <label class="product-removal">Remove</label>
+          <label class="product-quantity all">Total</label>
+        </div>
+      
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/athen01.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title">Athens trip - Diposit </div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">100</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+      
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/corfu001.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title">Corfu trip - Deposit</div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">100.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/santorini01.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title">Santorini trip - Deposit</div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">100.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/Museuma.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title"> Museum one-day pass </div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">12.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+        
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/Museumb.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title"> Museum three-day pass </div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">20.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+        
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/COOKING CLASS.jpeg">
+          </div>
+          <div class="product-details">
+            <div class="product-title"> Cooking class Plan A </div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">39.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+
+        <div class="product">
+          <div class="product-image">
+            <img src="../images/cooking class06.jpeg">
+          </div>
+          <div class="product-details">
+            <div class="product-title"> Cooking class Plan B </div>
+            <p class="product-description"></p>
+          </div>
+          <div class="product-price">99.00</div>
+          <div class="product-quantity">
+            <input type="number" value="0" min="0">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product">
+              Remove
+            </button>
+          </div>
+          <div class="product-line-price">0.00</div>
+        </div>
+
+        <div class="totals">
+          <div class="totals-item">
+            <label class="subtotal">Subtotal</label>
+            <div class="totals-value" id="cart-subtotal">0</div>
+           <div id="paypal"></div>
+          </div>
+          <!-- <div class="totals-item">
+            <label>Tax (5%)</label>
+            <div class="totals-value" id="cart-tax">122.5</div>
+          </div>
+          <div class="totals-item">
+            <label>Shipping</label>
+            <div class="totals-value" id="cart-shipping">15.00</div>
+          </div>
+          <div class="totals-item totals-item-total">
+            <label>Grand Total</label>
+            <div class="totals-value" id="totals-value">750.00</div>
+          </div> -->
+        </div>
+         
+
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+      
+        <script  src="/payment/payment.js"></script>
+      
+    </div>
+    <!-- footer -->
+   <footer class="bg" >
+    <div class="flex">
+      <div class="left">
+          <img src="/logo.png" alt="" width="50" class="mb-3">
+          <p class="">A trip to Greece takes you into the mysterious world of Greece. Discover the most beautiful islands, ancient city ruins, cultural festivals and gourmet food, book unique trips, and offer exclusive offers. Subscribe to Greece Travel and set off to explore the charm of Greece!</p>
+          <ul class="list-inline" width="50">
+            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank" title="twitter"><i class="fa fa-twitter "></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook "></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram "></i></a></li>
+            <li class="list-inline-item"><a href="https://www.pinterest.com/" target="_blank" title=""><i class="fa fa-pinterest "></i></a></li>
+            <li class="list-inline-item"><a href="https://vimeo.com/" target="_blank" title=""><i class="fa fa-vimeo "></i></a></li>
+          </ul>
+        </div>
+        
+        <div class="right">
+          <h6 class="">Subscription</h6>
+          <p class="">Subscribe to Greece Travel and join us on a fascinating and wonderful adventure!</p>
+          <div class="p-1 rounded border">
+          <div class="input-group">
+            <div class="book-form">
+              <form id="form"> 
+                <div class="field ">
+                  <input type="text" name="email" id="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                </div>
+                  <div class="input-group-append">
+                    <input type="submit" id="button" class="btn" value="Send Email" ><i class="fa fa-paper-plane"></i>
+                     <!-- <button class="submit" onclick="alert('已發送')">Send</button> -->
+                  </form>
+                  </div>                         
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- Email.js -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript"> emailjs.init('-jwKv0z9xZ8AhbRR9')</script>
+      <script src="JS/email.js"></script>
+
+    <!-- Copyrights -->
+    <div class="bg-light py-4 copy">
+      <div class="container text-center text">
+        <p class="copyrights"> Copyright 2023 © Grecian Journeys - All Rights Reserved</p>
+        <p class="copyrights">Designed by Angel & Chloe</p>
+      </div>
+    </div>
+  </footer>
+<script src="../JS/payment.js"></script>
+<!------------------------- chatbot ----------------------------->
+     <!-- css file link -->
+     <link rel="stylesheet" href="../chat/chat.css">
+
+     <!-- font awesome icon cdn-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     <div class="parent">
+             <button id="init" style="position: fixed" >START CHAT</button> 
+     </div>
+     <div id="test" style="position: fixed;top: 11rem;right: 3rem;display: none;">
+         <div class="child" id="chatbot">
+             <div class="header">
+                 <div class="h-child">
+                     <img src="../chat/chatbot (1).png" alt="avatar" id="avatar">
+                     <div>
+                         <span class="name">Chatbot</span>
+                         <br>
+                         <span style="color:lawngreen">online</span>
+                     </div>
+                 </div>
+                 <div>
+                     <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                 </div>
+             </div>
+             <div id="chat-box">
+             </div>
+         </div>
+     </div>
+ 
+     <!-- js file  -->
+     <script src="../chat/chat.js"></script>
+</body>
+</html>
