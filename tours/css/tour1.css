@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+h4,h5,h6,p{
+  font-family: Slablo 27px;
+  font-size: 16px;
+}
+h1,h2,h3{
+  color:#454545;
+  font-family:Bree Serif;
+  font-size: 20px;
+}
+.start{margin: 150px;}
+.flex{display: flex;}
+h6{margin-left: 40px;}
+
+.left{margin-left: 10%;}
+
+th{margin: 10px;}
+.img-right {
+  width:80%;
+  margin-bottom: 100px;
+}
+
+.carousel.slide{
+  margin-right: 20px;
+  width: 700px;
+}
+.carousel-inner{
+border-radius: 20px;
+}
+
+select{width:100px}
+.form,.carousel.slide{flex: 1;
+}
+
+.form-select{
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  width: 450px;
+  border-radius: 10px;
+}
+.contents{
+  margin-top: -110px;
+width: 50%;}
+.people{
+  padding:5px;
+  margin-top:5px;
+}
+.right_btn{margin-left: 240px;}
